@@ -49,9 +49,14 @@ export default function Wallet() {
                                             </Button>
                                         ))
                                     ) : (
-                                        <Button onClick={() => (window.open("https://phantom.app/","_blank"))}>
-                                            Download Phantom Wallet
-                                        </Button>
+                                        <div className="flex flex-col items-center justify-center">
+                                            <DialogDescription className="p-4 pt-0">
+                                                No Wallet found
+                                            </DialogDescription>
+                                            <Button onClick={() => (window.open("https://phantom.app/", "_blank"))}>
+                                                Download Phantom Wallet
+                                            </Button>
+                                        </div>
                                     )}
                                 </div>
                             ) : (
